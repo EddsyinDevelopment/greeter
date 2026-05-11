@@ -1,0 +1,23 @@
+{
+  "name": "greeter",
+  "version": "0.1.0",
+  "description": "A tiny CLI that says hi.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "greeter": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [],
+  "author": "Eddy",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.7.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}
