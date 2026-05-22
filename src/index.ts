@@ -1,4 +1,5 @@
 import process from "node:process";
+import { greet, resolveName } from "./greet.js";
 
 const args = process.argv.slice(2);
 
@@ -22,7 +23,5 @@ Examples:
 }
 
 const shout = args.includes("--shout");
-const name = args.find((a: string) => !a.startsWith("-")) ?? "world";
-
-const greeting = `Hello, ${name}! 👋`;
-console.log(shout ? greeting.toUpperCase() : greeting);
+const name = resolveName(args);
+console.log(greet(name, shout));
