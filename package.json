@@ -1,7 +1,7 @@
 {
   "name": "greeter",
   "version": "0.2.0",
-  "description": "A tiny CLI that says hi.",
+  "description": "A tiny CLI that prints a friendly greeting.",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
